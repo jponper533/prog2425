@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class monedaC {
     private static Scanner leer = new Scanner(System.in);
-
     public static void main(String[] args) {
 
         double probabilidadGanar = 50;
@@ -12,13 +11,6 @@ public class monedaC {
         String resultado = " ";
         int cara = 0;
         int cruz = 0;
-
-        mensajesParaUsu(numeroDeCaras);
-        resultadoDeLaMoneda(probabilidadGanar, resultado, cara, cruz, numeroDeCaras);
-
-    }
-
-    private static void mensajesParaUsu(int numeroDeCaras) {
 
         System.out.println("Elige que cara de la moneda quieres");
         System.out.println("1. cara (O)");
@@ -34,9 +26,9 @@ public class monedaC {
         System.out.println("Pulsa enter para empezar");
         leer.nextLine();
 
-        leer.close();
-
+        resultadoDeLaMoneda(probabilidadGanar, resultado, cara, cruz, numeroDeCaras);
     }
+    
 
     private static void resultadoDeLaMoneda(double probabilidadGanar, String resultado, int cara, int cruz, int numeroDeCaras) {
         Random random = new Random();
@@ -68,5 +60,4 @@ public class monedaC {
             System.out.println("Has fallado en tu prediccion");
         }
     }
-
 }
