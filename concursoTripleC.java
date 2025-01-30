@@ -11,7 +11,7 @@ public class concursoTripleC {
         int larry = 75;
         int puntuacion = 0;
         int balones = 0;
-        boolean salida = true;
+
         boolean salidaWhile = true;
         String dejarJuego = " ";
 
@@ -35,8 +35,6 @@ public class concursoTripleC {
 
                         puntuacion=codigoStephen(salidaWhile, aleatorio, balones, puntuacion, stephen, carro);
                         carro++;
-                        salida = true;
-
                     }
 
                     salidaWhile = salidaJuego(dejarJuego, salidaWhile);
@@ -51,7 +49,6 @@ public class concursoTripleC {
 
                         puntuacion=codigoLarry(salidaWhile, aleatorio, balones, puntuacion, larry, carro);
                         carro++;
-                        salida = true;
                     }
 
                     salidaWhile = salidaJuego(dejarJuego, salidaWhile);
